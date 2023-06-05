@@ -10,6 +10,7 @@
 	line-height: 20px;
 	cursor: pointer;
 	transition: 0.3s all ease;
+	width: fit-content;
 	@include border;
 	@include focusButton;
 }
