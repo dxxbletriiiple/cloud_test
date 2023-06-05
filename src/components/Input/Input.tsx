@@ -1,11 +1,10 @@
-import { InputInterface } from '../../interfaces';
+import { IInput } from '../../interfaces';
 import st from './Input.module.scss';
 
-export const Input = ({ label, type, placeholder }: InputInterface) => {
+export const Input = ({ type, placeholder }: IInput) => {
 	return (
-		<label>
-			{label}
+		<>
 			<input className={st.input} type={type} placeholder={placeholder} />
-		</label>
+		</>
 	);
 };
