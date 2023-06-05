@@ -1,0 +1,17 @@
+@import '../../styles/mixins';
+
+.input {
+	width: 400px;
+	height: 44px;
+	padding: 12px;
+	background: #f5f5f5;
+	border: none;
+	outline: 1px solid rgba(0, 0, 0, 0.16);
+	transition: 0.3s all ease;
+	color: var(--dark);
+	@include border;
+	@include focusPurple;
+	&::-webkit-inner-spin-button {
+		display: none;
+	}
+}
