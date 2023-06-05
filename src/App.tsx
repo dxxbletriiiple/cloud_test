@@ -1,4 +1,4 @@
-import Button from './components/Buttons';
+import MainForm from './components/MainForm';
 import st from './App.module.scss';
 
 function App() {
@@ -28,9 +28,7 @@ function App() {
 				</div>
 			</div>
 			<hr className={st.devider} />
-			<form>
-				<Button text='' id='' handler={console.log} />
-			</form>
+			<MainForm />
 		</div>
 	);
 }
