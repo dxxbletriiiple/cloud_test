@@ -1,0 +1,35 @@
+@mixin border {
+	border-radius: 4px;
+}
+
+@mixin focusPurple {
+	&:focus,
+	&:focus-within {
+		outline: 1px solid var(--purple);
+	}
+}
+
+@mixin focusWhite {
+	&:focus,
+	&:focus-within {
+		outline: 1px solid var(--white);
+	}
+}
+
+@mixin focusButton {
+	&:focus,
+	&:focus-within {
+		outline: 1px solid var(--purple);
+		background: none;
+		color: var(--purple);
+	}
+}
+
+@mixin focusOutlinedButton {
+	&:focus,
+	&:focus-within {
+		outline: none;
+		background: var(--purple);
+		color: var(--white);
+	}
+}
