@@ -4,7 +4,7 @@ import st from './MainPage.module.scss';
 export const MainPage = () => {
 	return (
 		<>
-			<div className={st.profile}>
+			<section className={st.profile}>
 				<div className={st.pic}>
 					<span>ДА</span>
 				</div>
@@ -26,7 +26,7 @@ export const MainPage = () => {
 						</a>
 					</div>
 				</div>
-			</div>
+			</section>
 			<hr className={st.devider} />
 			<MainForm />
 		</>
