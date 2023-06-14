@@ -1,0 +1,23 @@
+.notfound {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 656px;
+	position: relative;
+}
+.text {
+	color: var(--dark);
+	font-size: 56px;
+	font-weight: 900;
+	text-align: center;
+}
+
+.link {
+	a {
+		color: var(--purple);
+	}
+	text-decoration: none;
+	position: absolute;
+	bottom: 0;
+}
