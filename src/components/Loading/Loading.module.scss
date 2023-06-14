@@ -1,0 +1,43 @@
+@import '../../styles/mixins.scss';
+
+.loading {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	height: 656px;
+}
+.text {
+	font-size: 32px;
+	color: var(--dark);
+	text-align: center;
+}
+
+.loader {
+	width: 300px;
+	height: 10px;
+	background: var(--grey);
+	position: relative;
+	overflow: hidden;
+	@include border;
+}
+
+.bar {
+	height: 100%;
+	width: 100px;
+	background: var(--purple);
+	position: absolute;
+	animation: loading 2s cubic-bezier(0.78, 0, 0.29, 1.08) infinite;
+	@include border;
+}
+
+@keyframes loading {
+	0% {
+		left: 0;
+	}
+
+	100% {
+		left: 100%;
+	}
+}
