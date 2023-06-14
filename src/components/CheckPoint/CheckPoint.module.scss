@@ -6,6 +6,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 }
 
 .inprogress {
@@ -24,4 +25,12 @@
 
 .notyet {
 	background: var(--grey);
+}
+.index {
+	position: absolute;
+	color: var(--dark);
+	top: 38px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
 }

@@ -10,6 +10,7 @@ export const CheckPoint = (prop: ICheckPoint) => {
 			})}
 		>
 			<div className={cn(st.dot, st[prop.state])}></div>
+			<div className={st.index}>{prop.index}</div>
 		</div>
 	);
 };
