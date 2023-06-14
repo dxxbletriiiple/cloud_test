@@ -1,10 +1,10 @@
 import { IInput } from '../../interfaces';
 import st from './Input.module.scss';
 
-export const Input = ({ type, placeholder }: IInput) => {
+export const Input = (props: IInput) => {
 	return (
 		<>
-			<input className={st.input} type={type} placeholder={placeholder} />
+			<input className={st.input} {...props} />
 		</>
 	);
 };
