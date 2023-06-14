@@ -1,10 +1,14 @@
+//@import url('https://cloud.ru/fonts/sb-sans-interface/SBSansInterface-Regular.woff2');
 :root {
 	--purple: #5558fa;
 	--grey: #cccccc;
 	--white: #fff;
 	--dark: #333;
 }
-
+@font-face {
+	font-family: 'SB Sans Interface';
+	src: url('./fonts/SBSansInterface-Regular.woff2');
+}
 *,
 *::before,
 *::after {
@@ -20,7 +24,7 @@ html {
 
 body {
 	background: #f4f4f5;
-	font-family: 'SB Sans Text';
+	font-family: 'SB Sans Interface';
 	min-height: 100vh;
 }
 
@@ -30,4 +34,8 @@ video,
 svg {
 	display: block;
 	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
 }
