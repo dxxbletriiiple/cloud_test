@@ -15,3 +15,13 @@ export interface IInput {
 	placeholder: string;
 	onChange?: () => void;
 }
+
+export enum CheckPiontState {
+	NOT_YET = 'notyet',
+	IN_PROGRESS = 'inprogress',
+	DONE = 'done',
+}
+
+export interface ICheckPoint {
+	state: CheckPiontState;
+}
