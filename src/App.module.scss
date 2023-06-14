@@ -1,6 +1,7 @@
 .app {
 	max-width: 900px;
-	height: 704px;
+	min-height: 704px;
+	height: fit-content;
 	background: var(--white);
 	margin-inline: auto;
 	margin-top: 24px;
