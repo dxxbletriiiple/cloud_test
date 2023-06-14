@@ -1,17 +1,21 @@
 import { ReactNode } from 'react';
-
-export interface IButton {
-	text: string;
+interface Id {
 	id: string;
+}
+
+interface Text {
+	text: string;
+}
+
+interface ChildNode {
+	children: ReactNode;
+}
+export interface IButton extends Id, Text {
 	isOutlined?: boolean;
 	handler: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
-export interface ILabel {
-	text: string;
-	children: ReactNode;
-}
-export interface IInput {
-	id?: string;
+export interface ILabel extends Text, ChildNode {}
+export interface IInput extends Partial<Id> {
 	type: string;
 	placeholder: string;
 	onChange?: () => void;
@@ -27,3 +31,7 @@ export interface ICheckPoint {
 	state: CheckPiontState;
 	index: number;
 }
+
+export interface ISelect extends ChildNode {}
+
+export interface IOPtion extends Id, Text {}
