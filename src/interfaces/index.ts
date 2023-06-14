@@ -14,7 +14,9 @@ export interface IButton extends Id, Text {
 	isOutlined?: boolean;
 	handler: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
-export interface ILabel extends Text, ChildNode {}
+export interface ILabel extends Text, ChildNode {
+	field?: boolean;
+}
 export interface IInput extends Partial<Id> {
 	type: string;
 	placeholder: string;
@@ -32,6 +34,8 @@ export interface ICheckPoint {
 	index: number;
 }
 
-export interface ISelect extends ChildNode {}
+export interface ISelect extends ChildNode, Id {}
 
-export interface IOPtion extends Id, Text {}
+export interface IOPtion extends Id, Text {
+	value: string;
+}
