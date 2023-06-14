@@ -1,14 +1,14 @@
 import cn from 'classnames';
 import CheckPoint from '../CheckPoint';
-import st from './Progress.module.scss';
 import { CheckPiontState } from '../../interfaces';
+import st from './Progress.module.scss';
 
 export const Progress = () => {
 	return (
 		<div className={cn(st.progress, st.two)}>
-			<CheckPoint state={CheckPiontState.DONE} />
-			<CheckPoint state={CheckPiontState.IN_PROGRESS} />
-			<CheckPoint state={CheckPiontState.NOT_YET} />
+			{[...Array(3)].map((_, i) => (
+				<CheckPoint index={i + 1} state={CheckPiontState.DONE} key={crypto.randomUUID()} />
+			))}
 		</div>
 	);
 };
