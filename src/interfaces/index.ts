@@ -11,6 +11,7 @@ export interface ILabel {
 	children: ReactNode;
 }
 export interface IInput {
+	id?: string;
 	type: string;
 	placeholder: string;
 	onChange?: () => void;
@@ -24,4 +25,5 @@ export enum CheckPiontState {
 
 export interface ICheckPoint {
 	state: CheckPiontState;
+	index: number;
 }
